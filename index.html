@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GabzTravel | Explore the Unseen</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="dark-mode">
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">Gabz<span>Travel</span></a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#destinations">Destinations</a></li>
+                <li><a href="#packages">Packages</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><button id="theme-toggle">🌓</button></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="slider">
+            <div class="slide active" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Explore The World With Us</h1>
+                    <p>Temukan keindahan dunia yang belum pernah Anda bayangkan sebelumnya.</p>
+                    <a href="#packages" class="btn">Book Now</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Adventure Awaits</h1>
+                    <p>Jelajahi pegunungan tinggi dan danau kristal yang menenangkan.</p>
+                    <a href="#packages" class="btn">Start Journey</a>
+                </div>
+            </div>
+            <div class="slide" style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=1920&q=80')">
+                <div class="hero-content">
+                    <h1>Paradise Found</h1>
+                    <p>Nikmati pantai pasir putih dan matahari terbenam yang eksotis.</p>
+                    <a href="#packages" class="btn">Find Paradise</a>
+                </div>
+            </div>
+        </div>
+        <div class="dots-container">
+            <span class="dot active" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+        </div>
+    </section>
+
+    <section id="destinations" class="section fade-up">
+        <div class="container">
+            <h2 class="section-title">Popular Destinations</h2>
+            <div class="grid-gallery">
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=500&q=80" alt="Bali"><div class="overlay"><span>Bali</span></div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?w=500&q=80" alt="Italy"><div class="overlay"><span>Italy</span></div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1503917988258-f87a78e3c995?w=500&q=80" alt="France"><div class="overlay"><span>Paris</span></div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1523906834658-6e24ef2386f9?w=500&q=80" alt="Venice"><div class="overlay"><span>Venice</span></div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?w=500&q=80" alt="Japan"><div class="overlay"><span>Kyoto</span></div></div>
+                <div class="gallery-item"><img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?w=500&q=80" alt="Greece"><div class="overlay"><span>Santorini</span></div></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="packages" class="section fade-up">
+        <div class="container">
+            <h2 class="section-title">Our Best Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <img src="https://images.unsplash.com/photo-1540202404-a2f29016bb5d?w=500&q=80" alt="Package">
+                    <div class="card-content">
+                        <h3>Tropical Island</h3>
+                        <p class="price">$1,200</p>
+                        <p>5 Hari 4 Malam eksklusif di pulau pribadi.</p>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=500&q=80" alt="Package">
+                    <div class="card-content">
+                        <h3>Mountain Hiking</h3>
+                        <p class="price">$850</p>
+                        <p>Petualangan mendaki Alpen dengan pemandu profesional.</p>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+                <div class="package-card">
+                    <img src="https://images.unsplash.com/photo-1520250497591-112f2f40a3f4?w=500&q=80" alt="Package">
+                    <div class="card-content">
+                        <h3>City Lights</h3>
+                        <p class="price">$1,500</p>
+                        <p>Jelajahi gemerlap kota Tokyo dan kuliner terbaiknya.</p>
+                        <button class="btn-outline">View Details</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section fade-up">
+        <div class="container about-container">
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470?w=600&q=80" alt="About Us">
+            </div>
+            <div class="about-text">
+                <h2>Why Choose GabzTravel?</h2>
+                <p>Kami telah berpengalaman lebih dari 10 tahun dalam menyusun perjalanan impian yang tak terlupakan. Keamanan dan kenyamanan Anda adalah prioritas utama kami.</p>
+                <p>Setiap detail perjalanan kami kurasi untuk memastikan Anda mendapatkan pengalaman autentik dan berkesan.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>Gabz<span>Travel</span></h3>
+                    <p>Your trusted travel partner since 2016.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#about">About</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <p>IG | FB | TW</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 GabzTravel. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
